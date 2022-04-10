@@ -6,6 +6,10 @@ import metamask from "./wallet/metamask";
 import fortmatic from "./wallet/fortmatic";
 import walletlink from "./wallet/walletlink";
 import walletconnect from "./wallet/walletconnect";
+import harmony from "./wallet/harmony/wallet";
+import kardia from "./wallet/kardia/wallet";
+import klaytn from "./wallet/klaytn/wallet";
+import near from "./wallet/near/wallet";
 
 class Wallet {
   // 当前注册的钱包
@@ -21,6 +25,10 @@ class Wallet {
     fortmatic,
     walletlink,
     walletconnect,
+    harmony,
+    kardia,
+    klaytn,
+    near,
   };
 
   constructor(name: string, config?: object) {

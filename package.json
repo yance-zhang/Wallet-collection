@@ -9,7 +9,7 @@
   "types": "lib/index.d.ts",
   "name": "wallet-collection",
   "description": "A dapp wallet provider",
-  "homepage": "https://github.com/Anunnakill/Wallet-ethers#readme",
+  "homepage": "https://github.com/yance-zhang/Wallet-collection#readme",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,11 +38,11 @@
     "@solana/web3.js"
   ],
   "bugs": {
-    "url": "https://github.com/Anunnakill/Wallet-ethers/issues"
+    "url": "https://github.com/yance-zhang/Wallet-collection/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Anunnakill/Wallet-ethers.git"
+    "url": "git+ssh://git@github.com/yance-zhang/Wallet-collection.git"
   },
   "dependencies": {
     "@portis/web3": "^4.0.6",
@@ -52,7 +52,9 @@
     "@waxio/waxjs": "^1.0.4",
     "ethers": "^5.5.2",
     "fortmatic": "^2.2.1",
-    "walletlink": "^2.1.11"
+    "walletlink": "^2.1.11",
+    "near-api-js": "^0.44.2",
+    "@harmony-js/core": "^0.1.57"
   },
   "devDependencies": {
     "typescript": "^4.4.4"

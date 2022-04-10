@@ -1,5 +1,6 @@
 # Wallet
 
+This tool was built on [Anunnakill/Wallet-ethers](https://github.com/Anunnakill/Wallet-ethers)
 ## Introduction
 
 The wallet provider is a plug-in that integrates various blockchain wallet APIs to connect to Dapp (send transactions, personal signatures, deploy contracts).
@@ -18,20 +19,20 @@ For more configuration details of the following tutorial, please move to the rel
 
 ## Code Repository
 
-[https://github.com/silence16zhang/Wallet-collection](https://github.com/silence16zhang/Wallet-collection)
+[https://github.com/yance-zhang/Wallet-collection](https://github.com/yance-zhang/Wallet-collection)
 
 ## Installation
 
 ### npm
 
 ```bash
-npm i --save wallet-ethers
+npm i --save wallet-collection
 ```
 
 ### yarn
 
 ```bash
-yarn add wallet-ethers
+yarn add wallet-collection
 ```
 
 ## Usage
@@ -39,7 +40,7 @@ yarn add wallet-ethers
 ### ES6
 
 ```javascript
-import Wallet from "wallet-ethers";
+import Wallet from "wallet-collection";
 ```
 
 ```javascript
