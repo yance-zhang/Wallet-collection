@@ -5,7 +5,7 @@ This tool was built on [Anunnakill/Wallet-ethers](https://github.com/Anunnakill/
 
 The wallet provider is a plug-in that integrates various blockchain wallet APIs to connect to Dapp (send transactions, personal signatures, deploy contracts).
 
-Now integrated Metamask, Walletconnect, Walletlink(Coinbase Wallet), Fortmatic, Portis, Waxio(Wax Cloud Wallet), Phantom, Sollet.
+Now integrated Metamask, Walletconnect, Walletlink(Coinbase Wallet), Fortmatic, Portis, Waxio(Wax Cloud Wallet), Phantom, Sollet, Harmony, Klaytn, Kardia, Near.
 
 Other wallets are being supported one after another (Walletconnect protocol has been adopted by dozens of popular wallets).
 

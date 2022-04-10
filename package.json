@@ -3,7 +3,7 @@
     "lib/**/*"
   ],
   "license": "ISC",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Yance",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
