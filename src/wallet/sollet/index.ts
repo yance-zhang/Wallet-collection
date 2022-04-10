@@ -22,6 +22,10 @@ class Sollet {
   // 钱包执行账号登录
   public async login() {
     try {
+      const Window: any = globalThis;
+      if (!Window.sollet) {
+        throw new Error("Please check your Chrome Extension for Sollet.");
+      }
       // 授权
       await this.wallet.connect();
 

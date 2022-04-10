@@ -1,9 +1,24 @@
 import * as nearAPI from 'near-api-js'
-import nearConfig from './config.json'
 
 interface Options {
   appName: string;
   network: "mainnet" | "testnet";
+}
+const NC = {
+  mainnet: {
+    networkId: "mainnet",
+    nodeUrl: "https://rpc.mainnet.near.org",
+    walletUrl: "https://wallet.mainnet.near.org",
+    helperUrl: "https://helper.mainnet.near.org",
+    explorerUrl: "https://explorer.mainnet.near.org"
+  },
+  testnet: {
+    networkId: "testnet",
+    nodeUrl: "https://rpc.testnet.near.org",
+    walletUrl: "https://wallet.testnet.near.org",
+    helperUrl: "https://helper.testnet.near.org",
+    explorerUrl: "https://explorer.testnet.near.org"
+  }
 }
 class Near {
   public signer: any;
@@ -25,7 +40,7 @@ class Near {
 	public async login() {
     try {
       const { connect, keyStores, WalletConnection } = nearAPI;
-      const near_config = nearConfig[this.network]
+      const near_config = NC[this.network]
       const config: any = {
         ...near_config,
         headers: {},

@@ -26,13 +26,13 @@ For more configuration details of the following tutorial, please move to the rel
 ### npm
 
 ```bash
-npm i --save wallet-collection
+npm i --save wallet-collect
 ```
 
 ### yarn
 
 ```bash
-yarn add wallet-collection
+yarn add wallet-collect
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ yarn add wallet-collection
 ### ES6
 
 ```javascript
-import Wallet from "wallet-collection";
+import Wallet from "wallet-collect";
 ```
 
 ```javascript

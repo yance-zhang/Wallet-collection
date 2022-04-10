@@ -24,7 +24,7 @@ class Klaytn {
     try {
       const Window: any = globalThis;
       if (!Window.klaytn) {
-        throw new Error("Please check your Chrome Extension for Klaytn");
+        throw new Error("Please check your Chrome Extension for Klaytn.");
       }
       // 授权
       const accounts = await this.wallet.enable();

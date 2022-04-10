@@ -19,6 +19,10 @@ class Phantom {
   // 钱包执行账号登录
   public async login() {
     try {
+      const Window: any = globalThis;
+      if (!Window.phantom?.solana) {
+        throw new Error("Please check your Chrome Extension for Phantom.");
+      }
       // 授权
       const res = await this.wallet.connect();
 

@@ -24,7 +24,7 @@ class Kardia {
     try {
       const Window: any = globalThis;
       if (!Window.kardiachain) {
-        throw new Error("Please check your Chrome Extension for Kardiachain");
+        throw new Error("Please check your Chrome Extension for Kardia.");
       }
       // 授权
       const accounts = await this.wallet.enable();

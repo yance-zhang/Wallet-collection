@@ -22,6 +22,10 @@ class Metamask {
   // 钱包执行账号登录
   public async login() {
     try {
+      const Window: any = globalThis;
+      if (!Window.ethereum) {
+        throw new Error("Please check your Chrome Extension for Metamask.");
+      }
       // 授权
       const [account] = await this.wallet.request({
         method: "eth_requestAccounts",
