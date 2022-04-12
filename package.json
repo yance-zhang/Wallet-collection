@@ -3,7 +3,7 @@
     "lib/**/*"
   ],
   "license": "ISC",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Yance",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -45,6 +45,8 @@
     "url": "git+ssh://git@github.com/yance-zhang/Wallet-collection.git"
   },
   "dependencies": {
+    "@harmony-js/core": "^0.1.57",
+    "@onflow/fcl": "^0.0.78",
     "@portis/web3": "^4.0.6",
     "@project-serum/sol-wallet-adapter": "^0.2.6",
     "@solana/web3.js": "^1.31.0",
@@ -52,9 +54,8 @@
     "@waxio/waxjs": "^1.0.4",
     "ethers": "^5.5.2",
     "fortmatic": "^2.2.1",
-    "walletlink": "^2.1.11",
     "near-api-js": "^0.44.2",
-    "@harmony-js/core": "^0.1.57"
+    "walletlink": "^2.1.11"
   },
   "devDependencies": {
     "typescript": "^4.4.4"

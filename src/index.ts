@@ -10,6 +10,7 @@ import harmony from "./wallet/harmony/wallet";
 import kardia from "./wallet/kardia/wallet";
 import klaytn from "./wallet/klaytn/wallet";
 import near from "./wallet/near/wallet";
+import flow from "./wallet/flow";
 
 class Wallet {
   // 当前注册的钱包
@@ -29,6 +30,7 @@ class Wallet {
     kardia,
     klaytn,
     near,
+    flow,
   };
 
   constructor(name: string, config?: object) {

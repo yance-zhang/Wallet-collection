@@ -5,7 +5,7 @@ This tool was built on [Anunnakill/Wallet-ethers](https://github.com/Anunnakill/
 
 The wallet provider is a plug-in that integrates various blockchain wallet APIs to connect to Dapp (send transactions, personal signatures, deploy contracts).
 
-Now integrated Metamask, Walletconnect, Walletlink(Coinbase Wallet), Fortmatic, Portis, Waxio(Wax Cloud Wallet), Phantom, Sollet, Harmony, Klaytn, Kardia, Near.
+Now integrated Metamask, Walletconnect, Walletlink(Coinbase Wallet), Fortmatic, Portis, Waxio(Wax Cloud Wallet), Phantom, Sollet, Harmony, Klaytn, Kardia, Near, Flow.
 
 Other wallets are being supported one after another (Walletconnect protocol has been adopted by dozens of popular wallets).
 
@@ -207,21 +207,31 @@ wallet.onChainChanged(chainId => {
 
 ### ❗️❗️Official methods and events support
 
-1⃣️Walletconnect👉 signer✅ login✅ logout✅ onAccountsChanged✅ onChainChanged✅
+- Walletconnect👉 signer✅ login✅ logout✅ onAccountsChanged✅ onChainChanged✅
 
-2⃣️Metamask👉 signer✅ login✅ logout❌ onAccountsChanged✅ onChainChanged✅
+- Metamask👉 signer✅ login✅ logout❌ onAccountsChanged✅ onChainChanged✅
 
-3⃣️Portis👉 signer✅ login✅ logout✅ onAccountsChanged✅ onChainChanged❌
+- Portis👉 signer✅ login✅ logout✅ onAccountsChanged✅ onChainChanged❌
 
-4⃣️Walletlink👉 signer✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+- Walletlink👉 signer✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
 
-5⃣️Fortmatic👉 signer✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+- Fortmatic👉 signer✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
 
-6⃣️Waxio👉 signer❌ login✅ logout❌ onAccountsChanged❌ onChainChanged❌
+- Waxio👉 signer❌ login✅ logout❌ onAccountsChanged❌ onChainChanged❌
 
-7⃣️Phantom👉 signer(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+- Phantom👉 signer(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
 
-8⃣️Sollet👉 signer(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+- Sollet👉 signer(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+
+- Harmony👉 signer✅ login✅ logout❌ onAccountsChanged❌ onChainChanged❌
+
+- Kardia👉 signer✅ login✅ logout❌ onAccountsChanged✅ onChainChanged✅
+
+- Klaytn👉 signer✅ login✅ logout❌ onAccountsChanged✅ onChainChanged✅
+
+- Near👉 signer❌ login✅ logout❌ onAccountsChanged❌ onChainChanged❌
+
+- Flow👉 signer❌ login✅ logout❌ onAccountsChanged❌ onChainChanged❌
 
 ## Supported Wallets & Integrations
 
@@ -233,3 +243,8 @@ wallet.onChainChanged(chainId => {
 6. [Fortmatic](https://fortmatic.com)
 7. [Walletlink](https://walletlink.org)
 8. [Walletconnect](https://walletconnect.com)
+9. [Harmony](https://www.harmony.one/)
+10. [Kardia](https://www.kardiachain.io/)
+11. [Klaytn](https://www.klaytn.com/)
+12. [Near](https://near.org/)
+13. [Flow](https://www.onflow.org/)
