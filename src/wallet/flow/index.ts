@@ -1,18 +1,27 @@
 import * as fcl from "@onflow/fcl";
 
+const flow_onfig = {
+  mainnet: "https://fcl-discovery.onflow.org/mainnet/authn",
+  testnet: "https://fcl-discovery.onflow.org/testnet/authn"
+}
+
+interface Props {
+  network: "mainnet" | "testnet"  
+}
+
 class Flow {
   public singer: any;
   public wallet: any;
   public account: any;
 
-  constructor() {
+  constructor({ network }: Props) {
     this.singer = {}
     this.wallet = {}
     this.account = ''
 
     this.wallet = fcl
     this.wallet.config({
-      "discovery.wallet": "https://fcl-discovery.onflow.org/testnet/authn", // Endpoint set to Testnet
+      "discovery.wallet": flow_onfig[network],
     })
   }
 
