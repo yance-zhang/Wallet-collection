@@ -1,7 +1,7 @@
 import * as fcl from "@onflow/fcl";
 
 const flow_onfig = {
-  mainnet: "https://fcl-discovery.onflow.org/mainnet/authn",
+  mainnet: "https://fcl-discovery.onflow.org/authn",
   testnet: "https://fcl-discovery.onflow.org/testnet/authn"
 }
 
